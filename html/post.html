@@ -103,22 +103,27 @@
       <button id="startbutton">Click</button>
       <button class="resetbutton" id="resetbutton">Reset</button>
     </div>
-    <form action="" class="create_post">
+    <form id="post_form" class="create_post">
       <label for="project_name">Project Name</label>
-      <input id="project_name" name="project_name" type="text" placeholder="Name" />
+      <input id="project_name" name="project_name" type="text" placeholder="Name" required />
       <br />
 
       <label for="project_description">Project Description</label>
-      <textarea name="project_description" id="project_description" cols="30" rows="5"
-        placeholder="Description"></textarea><br />
+      <textarea name="project_description" id="project_description" cols="30" rows="5" placeholder="Description"
+        required></textarea><br />
 
-      <label for="value">Value</label>
-      <input id="value" type="text" placeholder="Value" /><br />
+      <label for="university">University</label>
+      <select name="university" id="university" required>
+        <option value="Charles Darwin University">Charles Darwin University</option>
+        <option value="University of Melbourne">University of Melbourne</option>
+      </select><br>
 
-      <label for="value">Value</label>
-      <input id="value" type="text" placeholder="Value" /><br />
-
-      <button id="create_post" type="submit">Create</button>
+      <label for="university">Discipline</label>
+      <select name="discipline" id="discipline" required>
+        <option value="IT">IT</option>
+        <option value="Business">Business</option>
+      </select><br>
+      <button type="button" id="create_post">Create</button><br><br>
     </form>
   </main>
 
@@ -198,6 +203,32 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!--Firebase Imports-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBVZX8gfHlgRPFlysXEnEmhvAkOI4FdVmE",
+    authDomain: "stufymvp.firebaseapp.com",
+    databaseURL: "https://stufymvp.firebaseio.com",
+    projectId: "stufymvp",
+    storageBucket: "stufymvp.appspot.com",
+    messagingSenderId: "155502069199",
+    appId: "1:155502069199:web:bceb46f8e61ee9ae7fbeba",
+    measurementId: "G-9KYFKXR2FQ",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!--Firebase Imports End-->
 <script src="../js/script_capture.js"></script>
 <script src="../js/script_fudge.js"></script>
 

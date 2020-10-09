@@ -72,6 +72,11 @@ $(document).ready(function () {
     $("#filters").hide();
     $("#filter_button").show();
   });
+  $("#filters_reset").click(function () {
+    $("#filters").hide();
+    $("#filter_button").show();
+    $(".selection").show();
+  });
   $("#filter_button").click(function () {
     $("#filters").show();
     $("#filter_button").hide();

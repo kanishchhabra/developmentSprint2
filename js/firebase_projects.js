@@ -11,7 +11,7 @@ window.onload = (event) => {
                 project = doc.data();
                 console.log(project);
                 var HTMLBlock =
-                "<div class='selection project_selection'>"+
+                "<div class='selection project_selection "+project.Discipline+"'>"+
                 "<figure class='project_figure'>"+
                   "<svg id='Layer_1' style='enable-background: new 0 0 50 50' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>"+
                     "<g id='Layer_1_1_'>"+

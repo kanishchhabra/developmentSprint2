@@ -1,6 +1,7 @@
 window.onload = (event) => {
     var projectsGrid = document.getElementById('projects_grid');
     var selectionBlock = document.createElement('div');
+    selectionBlock.className = "main_grid";
     const app = firebase.app();
     const db = firebase.firestore();
     db.collection('Projects')

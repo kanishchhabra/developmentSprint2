@@ -1,6 +1,7 @@
 window.onload = (event) => {
     var peersGrid = document.getElementById("peers_grid");//gets the peers grid so that dynamic HTML code can be appended to the web page.
     var selectionBlock = document.createElement("div");//this is the div block which will store the dynamic HTML code, and can be appended as a child to the peers grid.
+    selectionBlock.className = "main_grid";
     const app = firebase.app(); //connects the script to the firebase application.
     const db = firebase.firestore();//connects with the firestore database.
 

@@ -1,6 +1,4 @@
-var CACHE_TITLE = 'developmentSprint2';
-var CACHE_VERSION = 'v1';
-var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
+var CACHE_NAME = 'developmentSprint2';
 var urlsToCache = [
     '/developmentSprint2/',
     '/developmentSprint2/index.html',

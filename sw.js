@@ -19,6 +19,14 @@ var urlsToCache = [
     '/developmentSprint2/js/sw_register.js',
     '/developmentSprint2/js/manifest.json',
 
+    '/developmentSprint2/icons/comments.svg',
+    '/developmentSprint2/icons/cross.svg',
+    '/developmentSprint2/icons/direct.svg',
+    '/developmentSprint2/icons/discover.svg',
+    '/developmentSprint2/icons/filter.svg',
+    '/developmentSprint2/icons/image.svg',
+    '/developmentSprint2/icons/like.svg',
+    '/developmentSprint2/icons/newsfeed.svg',
 
 ];
 

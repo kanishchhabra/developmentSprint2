@@ -18,21 +18,6 @@ var urlsToCache = [
     '/developmentSprint2/js/script_fudge.js',
     '/developmentSprint2/js/sw_register.js',
     '/developmentSprint2/js/manifest.json',
-
-    '/developmentSprint2/icons/comments.svg',
-    '/developmentSprint2/icons/cross.svg',
-    '/developmentSprint2/icons/direct.svg',
-    '/developmentSprint2/icons/discover.svg',
-    '/developmentSprint2/icons/filter.svg',
-    '/developmentSprint2/icons/image.svg',
-    '/developmentSprint2/icons/like.svg',
-    '/developmentSprint2/icons/newsfeed.svg',
-    '/developmentSprint2/icons/options.svg',
-    '/developmentSprint2/icons/pin.svg',
-    '/developmentSprint2/icons/plus.svg',
-    '/developmentSprint2/icons/profile.svg',
-    '/developmentSprint2/icons/projects.svg',
-    '/developmentSprint2/icons/star.svg',
 ];
 
 self.addEventListener('install', function (event) {

@@ -3,17 +3,17 @@
     "short_name": "Stufy",
     "icons": [
         {
-            "src": "/developmentSprint2/icons/stufy.jpg",
-            "sizes": "413x413",
+            "src": "/developmentSprint2/icons/stufy.png",
+            "sizes": "414x413",
             "type": "image/png"
         },
         {
-            "src": "/developmentSprint2/icons/stufy.jpg",
-            "sizes": "413x413",
+            "src": "/developmentSprint2/icons/stufy.png",
+            "sizes": "414x413",
             "type": "image/png"
         }
     ],
-    "start_url": "/index.html",
+    "start_url": "/developmentSprint2/index.html/",
     "display": "standalone",
     "background_color": "#00ffff",
     "theme_color": "#00ffff"

@@ -1,4 +1,6 @@
-var CACHE_NAME = 'developmentSprint2';
+var CACHE_TITLE = 'developmentSprint2';
+var CACHE_VERSION = 'v1';
+var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
     '/developmentSprint2/',
     '/developmentSprint2/index.html',
@@ -45,8 +47,8 @@ self.addEventListener('install', function (event) {
     );
 });
 
+// Adding offline functionality
 self.addEventListener('fetch', function (event) {
-    console.log("in the fetch");
     event.respondWith(
         caches.match(event.request)
             .then(function (response) {
@@ -55,7 +57,6 @@ self.addEventListener('fetch', function (event) {
                     return response;
                 }
                 return fetch(event.request);
-            }
-            )
+            })
     );
 });

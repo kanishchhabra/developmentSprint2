@@ -4,16 +4,16 @@
     "icons": [
         {
             "src": "/developmentSprint2/icons/stufy.png",
-            "sizes": "414x413",
+            "sizes": "416x416",
             "type": "image/png"
         },
         {
             "src": "/developmentSprint2/icons/stufy.png",
-            "sizes": "414x413",
+            "sizes": "416x416",
             "type": "image/png"
         }
     ],
-    "start_url": "/developmentSprint2/index.html",
+    "start_url": "/developmentSprint2/",
     "display": "standalone",
     "background_color": "#00ffff",
     "theme_color": "#00ffff"

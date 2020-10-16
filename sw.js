@@ -17,6 +17,7 @@ var urlsToCache = [
     '/developmentSprint2/js/script_filter.js',
     '/developmentSprint2/js/script_fudge.js',
     '/developmentSprint2/js/sw_register.js',
+    '/developmentSprint2/js/manifest.json',
 
     '/developmentSprint2/icons/comments.svg',
     '/developmentSprint2/icons/cross.svg',

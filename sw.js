@@ -32,6 +32,7 @@ var urlsToCache = [
     '/developmentSprint2/icons/profile.svg',
     '/developmentSprint2/icons/projects.svg',
     '/developmentSprint2/icons/star.svg',
+    '/developmentSprint2/icons/stufy.png',
 ];
 
 self.addEventListener('install', function (event) {

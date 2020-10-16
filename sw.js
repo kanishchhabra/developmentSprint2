@@ -5,19 +5,7 @@ var urlsToCache = [
     '/developmentSprint2/',
     '/developmentSprint2/index.html',
 
-    '/developmentSprint2/html/post.html',
-    '/developmentSprint2/html/projects.html',
 
-    '/developmentSprint2/css/style.css',
-
-    '/developmentSprint2/developmentSprint2/js/firebase_projects.js',
-    '/developmentSprint2/js/firebase.js',
-    '/developmentSprint2/js/script_capture.js',
-    '/developmentSprint2/js/script_filter_projects.js',
-    '/developmentSprint2/js/script_filter.js',
-    '/developmentSprint2/js/script_fudge.js',
-    '/developmentSprint2/js/sw_register.js',
-    '/developmentSprint2/js/manifest.json',
 ];
 
 self.addEventListener('install', function (event) {

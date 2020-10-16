@@ -1,0 +1,20 @@
+{
+    "name": "Stufy",
+    "short_name": "Stufy",
+    "icons": [
+        {
+            "src": "/developmentSprint2/icons/stufy.png",
+            "sizes": "416x416",
+            "type": "image/png"
+        },
+        {
+            "src": "/developmentSprint2/icons/stufy.png",
+            "sizes": "416x416",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/developmentSprint2/index.html",
+    "display": "standalone",
+    "background_color": "#00ffff",
+    "theme_color": "#00ffff"
+}

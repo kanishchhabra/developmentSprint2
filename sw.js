@@ -10,13 +10,14 @@ var urlsToCache = [
 
     '/developmentSprint2/css/style.css',
 
-    '/developmentSprint2/developmentSprint2/js/firebase_projects.js',
+    '/developmentSprint2/js/firebase_projects.js',
     '/developmentSprint2/js/firebase.js',
     '/developmentSprint2/js/script_capture.js',
     '/developmentSprint2/js/script_filter_projects.js',
     '/developmentSprint2/js/script_filter.js',
     '/developmentSprint2/js/script_fudge.js',
     '/developmentSprint2/js/sw_register.js',
+    '/developmentSprint2/js/manifest.json',
 
     '/developmentSprint2/icons/comments.svg',
     '/developmentSprint2/icons/cross.svg',
@@ -32,9 +33,11 @@ var urlsToCache = [
     '/developmentSprint2/icons/profile.svg',
     '/developmentSprint2/icons/projects.svg',
     '/developmentSprint2/icons/star.svg',
+    '/developmentSprint2/icons/stufy.png',
 ];
 
 self.addEventListener('install', function (event) {
+    // Perform install steps
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function (cache) {
@@ -44,8 +47,8 @@ self.addEventListener('install', function (event) {
     );
 });
 
+// Adding offline functionality
 self.addEventListener('fetch', function (event) {
-    console.log("in the fetch");
     event.respondWith(
         caches.match(event.request)
             .then(function (response) {
@@ -54,7 +57,6 @@ self.addEventListener('fetch', function (event) {
                     return response;
                 }
                 return fetch(event.request);
-            }
-            )
+            })
     );
 });

@@ -3,7 +3,13 @@ var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
     '/',
+    '/index.html',
+
+    '/html/post.html',
+    '/html/projects.html',
+
     '/css/style.css',
+
     '/js/firebase_projects.js',
     '/js/firebase.js',
     '/js/script_capture.js',
@@ -29,12 +35,26 @@ var urlsToCache = [
 ];
 
 self.addEventListener('install', function (event) {
-    // Perform install steps
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function (cache) {
                 console.log('Opened cache');
                 return cache.addAll(urlsToCache);
             })
+    );
+});
+
+self.addEventListener('fetch', function (event) {
+    console.log("in the fetch");
+    event.respondWith(
+        caches.match(event.request)
+            .then(function (response) {
+                // Cache hit - return response
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
+            }
+            )
     );
 });

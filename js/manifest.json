@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/developmentSprint2/",
+    "start_url": "/developmentSprint2/index.html",
     "display": "standalone",
     "background_color": "#00ffff",
     "theme_color": "#00ffff"

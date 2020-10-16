@@ -5,6 +5,11 @@ var urlsToCache = [
     '/developmentSprint2/',
     '/developmentSprint2/index.html',
 
+    '/developmentSprint2/html/post.html',
+    '/developmentSprint2/html/projects.html',
+
+    '/developmentSprint2/css/style.css',
+
 
 ];
 
